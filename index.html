@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli AI - Free Magical Ghibli Image Generator</title>
+    <meta name="description" content="Transform your photos into Ghibli-style artwork through AI technology, quickly creating stunning Ghibli art that perfectly captures magical aesthetics.">
+    <meta name="keywords" content="Ghibli AI, Ghibli style art, AI image generation, high-precision conversion, fast processing, photo to Ghibli, magical aesthetics, anime creation">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/80 backdrop-blur-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold bg-gradient-to-r from-[#1a6ea7] to-[#64b487] bg-clip-text text-transparent">
+                    Ghibli AI
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
+                    <a href="#gallery" class="text-gray-600 hover:text-gray-900">Gallery</a>
+                    <a href="#technology" class="text-gray-600 hover:text-gray-900">Technology</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900">FAQ</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <select class="bg-transparent text-sm text-gray-600">
+                        <option value="en">English</option>
+                        <option value="zh">中文</option>
+                        <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
+                        <option value="es">Español</option>
+                    </select>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+                        Try Now
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-[#1a6ea7] to-[#64b487] bg-clip-text text-transparent">
+                    Transform Your Photos Into Ghibli Style Art
+                </h1>
+                <div class="grid md:grid-cols-2 gap-8 mt-12">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6">Upload Image</h3>
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 hover:border-blue-500 transition cursor-pointer">
+                            <svg class="w-12 h-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                            </svg>
+                            <p class="text-gray-500">Click or drag image here</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6">Ghibli Style Result</h3>
+                        <div class="bg-gray-100 rounded-lg p-8 h-48 flex items-center justify-center">
+                            <p class="text-gray-500">Generated image will appear here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Feature Highlights</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">High-Precision Conversion</h3>
+                    <p class="text-gray-600">Advanced AI technology ensures accurate style transfer while preserving image details.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Fast Processing</h3>
+                    <p class="text-gray-600">Get your Ghibli-style artwork in seconds with our optimized processing pipeline.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Stunning Quality</h3>
+                    <p class="text-gray-600">Experience professional-grade results that capture the magic of Ghibli's style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Magical Ghibli AI Transformation Gallery</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Mountain Lake" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Mountain Lake Transformation</h4>
+                        <p class="text-gray-600">Experience the magic of nature through Ghibli's lens</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=800&q=80" alt="City Scene" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">City Scene AI Conversion</h4>
+                        <p class="text-gray-600">Urban landscapes reimagined in Ghibli's distinctive style</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology -->
+    <section id="technology" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Advanced Technology Behind Ghibli AI</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Style Analysis</h3>
+                    <p class="text-gray-600">Deep learning models trained on Ghibli's unique artistic elements</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Multi-Layer Generation</h3>
+                    <p class="text-gray-600">Advanced processing pipeline for authentic style transfer</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Detail Enhancement</h3>
+                    <p class="text-gray-600">AI-powered detail preservation and enhancement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Create Ghibli Art for Any Purpose</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Social Media</h3>
+                    <p class="text-gray-600">Create engaging content for your social platforms</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Games & Apps</h3>
+                    <p class="text-gray-600">Generate unique assets for your digital projects</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Art & Illustration</h3>
+                    <p class="text-gray-600">Transform your artwork into Ghibli-inspired masterpieces</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">What is Ghibli AI Generator?</h3>
+                    <p class="text-gray-600">An advanced AI tool that transforms your photos into the distinctive style of Studio Ghibli animations.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Can I choose specific Ghibli movie styles?</h3>
+                    <p class="text-gray-600">Yes! You can select from various Ghibli movie styles to match your preferred aesthetic.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Is it mobile-friendly?</h3>
+                    <p class="text-gray-600">Absolutely! Our Ghibli AI generator works perfectly on all mobile devices.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">How is privacy ensured?</h3>
+                    <p class="text-gray-600">We prioritize your privacy with secure processing and immediate deletion of source images after transformation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Ghibli AI</h3>
+                    <p class="text-gray-400">Transform your photos into magical Ghibli-style artwork instantly.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="#technology" class="text-gray-400 hover:text-white">Technology</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400">Email: tangjei@gmail.com</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Languages</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">English</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">中文</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">日本語</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">한국어</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Español</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Ghibli AI. All rights reserved. Created by tangjei.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
