@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghibli AI - Free Magical Ghibli Image Generator</title>
-    <meta name="description" content="Transform your photos into Ghibli-style artwork through AI technology, quickly creating stunning Ghibli art that perfectly captures magical aesthetics.">
-    <meta name="keywords" content="Ghibli AI, Ghibli style art, AI image generation, high-precision conversion, fast processing, photo to Ghibli, magical aesthetics, anime creation">
+    <title>Ghiblistyle AI - Free Magical Ghiblistyle Image Generator | ghiblistyle Art Online</title>
+    <meta name="description" content="Transform your photos into ghiblistyle artwork with ghiblistyle AI. Create stunning ghiblistyle art, ghiblistyle portraits, and magical ghiblistyle illustrations online. Experience the best ghiblistyle image generator for ghiblistyle fans.">
+    <meta name="keywords" content="ghiblistyle, ghiblistyle AI, ghiblistyle art, ghiblistyle image generator, ghiblistyle style, ghiblistyle photo, ghiblistyle portrait, ghiblistyle artwork, ghiblistyle anime, ghiblistyle online, ghiblistyle tool, ghiblistyle magic, ghiblistyle fan, ghiblistyle cartoon, ghiblistyle transformation">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0Z0MC14CN"></script>
     <script>
@@ -60,22 +60,24 @@
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto text-center">
                 <h1 class="text-5xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-[#1a6ea7] to-[#64b487] bg-clip-text text-transparent">
-                    Transform Your Photos Into Ghibli Style Art
+                    Transform Your Photos Into Ghiblistyle Art with Ghiblistyle AI
                 </h1>
                 <div class="grid md:grid-cols-2 gap-8 mt-12">
                     <div class="bg-white p-8 rounded-2xl shadow-lg">
-                        <h3 class="text-2xl font-semibold mb-6">Upload Image</h3>
-                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 hover:border-blue-500 transition cursor-pointer">
+                        <h3 class="text-2xl font-semibold mb-6">Upload Image for Ghiblistyle Conversion</h3>
+                        <div id="upload-area" class="border-2 border-dashed border-gray-300 rounded-lg p-8 hover:border-blue-500 transition cursor-pointer">
                             <svg class="w-12 h-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
                             </svg>
-                            <p class="text-gray-500">Click or drag image here</p>
+                            <p class="text-gray-500">Click or drag image here to start your ghiblistyle transformation</p>
+                            <input id="file-input" type="file" accept="image/*" style="display:none">
                         </div>
-                    </div>
+                    <!-- 生成按钮 -->
+                    <button id="generate-btn" class="mt-4 w-full bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Generate Ghiblistyle Art</button>
                     <div class="bg-white p-8 rounded-2xl shadow-lg">
-                        <h3 class="text-2xl font-semibold mb-6">Ghibli Style Result</h3>
-                        <div class="bg-gray-100 rounded-lg p-8 h-48 flex items-center justify-center">
-                            <p class="text-gray-500">Generated image will appear here</p>
+                        <h3 class="text-2xl font-semibold mb-6">Ghiblistyle Result</h3>
+                        <div id="result-area" class="bg-gray-100 rounded-lg p-8 h-48 flex items-center justify-center">
+                            <p class="text-gray-500">Your ghiblistyle image will appear here</p>
                         </div>
                     </div>
                 </div>
@@ -86,7 +88,7 @@
     <!-- Features -->
     <section id="features" class="py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16">Feature Highlights</h2>
+            <h2 class="text-4xl font-bold text-center mb-16">Ghiblistyle Feature Highlights</h2>
             <div class="grid md:grid-cols-3 gap-12">
                 <div class="text-center">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -94,8 +96,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">High-Precision Conversion</h3>
-                    <p class="text-gray-600">Advanced AI technology ensures accurate style transfer while preserving image details.</p>
+                    <h3 class="text-xl font-semibold mb-4">High-Precision Ghiblistyle Conversion</h3>
+                    <p class="text-gray-600">Advanced AI technology ensures accurate ghiblistyle transfer while preserving image details. Enjoy the most authentic ghiblistyle conversion experience.</p>
                 </div>
                 <div class="text-center">
                     <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -103,8 +105,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Fast Processing</h3>
-                    <p class="text-gray-600">Get your Ghibli-style artwork in seconds with our optimized processing pipeline.</p>
+                    <h3 class="text-xl font-semibold mb-4">Fast Ghiblistyle Processing</h3>
+                    <p class="text-gray-600">Get your ghiblistyle artwork in seconds with our optimized ghiblistyle processing pipeline.</p>
                 </div>
                 <div class="text-center">
                     <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -112,8 +114,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Stunning Quality</h3>
-                    <p class="text-gray-600">Experience professional-grade results that capture the magic of Ghibli's style.</p>
+                    <h3 class="text-xl font-semibold mb-4">Stunning Ghiblistyle Quality</h3>
+                    <p class="text-gray-600">Experience professional-grade results that capture the magic of ghiblistyle. Our ghiblistyle images are vibrant and full of detail.</p>
                 </div>
             </div>
         </div>
@@ -187,23 +189,23 @@
     <!-- FAQ -->
     <section id="faq" class="py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+            <h2 class="text-4xl font-bold text-center mb-16">Ghiblistyle Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-8">
                 <div>
-                    <h3 class="text-xl font-semibold mb-4">What is Ghibli AI Generator?</h3>
-                    <p class="text-gray-600">An advanced AI tool that transforms your photos into the distinctive style of Studio Ghibli animations.</p>
+                    <h3 class="text-xl font-semibold mb-4">What is Ghiblistyle AI Generator?</h3>
+                    <p class="text-gray-600">Ghiblistyle AI Generator is an advanced AI tool that transforms your photos into the distinctive ghiblistyle art. Enjoy ghiblistyle creations with one click.</p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold mb-4">Can I choose specific Ghibli movie styles?</h3>
-                    <p class="text-gray-600">Yes! You can select from various Ghibli movie styles to match your preferred aesthetic.</p>
+                    <h3 class="text-xl font-semibold mb-4">Can I choose specific ghiblistyle themes?</h3>
+                    <p class="text-gray-600">Yes! You can select from various ghiblistyle themes to match your preferred aesthetic. Ghiblistyle options are always expanding.</p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold mb-4">Is it mobile-friendly?</h3>
-                    <p class="text-gray-600">Absolutely! Our Ghibli AI generator works perfectly on all mobile devices.</p>
+                    <h3 class="text-xl font-semibold mb-4">Is ghiblistyle AI mobile-friendly?</h3>
+                    <p class="text-gray-600">Absolutely! Our ghiblistyle AI generator works perfectly on all mobile devices. Create ghiblistyle art anytime, anywhere.</p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold mb-4">How is privacy ensured?</h3>
-                    <p class="text-gray-600">We prioritize your privacy with secure processing and immediate deletion of source images after transformation.</p>
+                    <h3 class="text-xl font-semibold mb-4">How is privacy ensured for ghiblistyle images?</h3>
+                    <p class="text-gray-600">We prioritize your privacy with secure processing and immediate deletion of source images after ghiblistyle transformation.</p>
                 </div>
             </div>
         </div>
@@ -214,8 +216,8 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-12">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Ghibli AI</h3>
-                    <p class="text-gray-400">Transform your photos into magical Ghibli-style artwork instantly.</p>
+                    <h3 class="text-xl font-bold mb-4">Ghiblistyle AI</h3>
+                    <p class="text-gray-400">Transform your photos into magical ghiblistyle artwork instantly. Ghiblistyle is the best choice for ghiblistyle fans and creators.</p>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Quick Links</h4>
@@ -246,5 +248,39 @@
             </div>
         </div>
     </footer>
+<script>
+  const uploadArea = document.getElementById('upload-area');
+  const fileInput = document.getElementById('file-input');
+
+  uploadArea.addEventListener('click', () => {
+    fileInput.click();
+  });
+
+  fileInput.addEventListener('change', (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      alert('Selected file: ' + file.name);
+    }
+  });
+// 生成按钮和倒计时逻辑
+const generateBtn = document.getElementById('generate-btn');
+const resultArea = document.getElementById('result-area');
+let countdownTimer = null;
+
+generateBtn.addEventListener('click', () => {
+  let seconds = 20;
+  resultArea.innerHTML = `<p class='text-blue-600'>Generating image, please wait... (<span id='countdown'>${seconds}</span> seconds)</p>`;
+  const countdownSpan = document.getElementById('countdown');
+  if (countdownTimer) clearInterval(countdownTimer);
+  countdownTimer = setInterval(() => {
+    seconds--;
+    countdownSpan.textContent = seconds;
+    if (seconds <= 0) {
+      clearInterval(countdownTimer);
+      resultArea.innerHTML = `<p class='text-red-600'>Server connection failed</p>`;
+    }
+  }, 1000);
+});
+</script>
 </body>
 </html>
